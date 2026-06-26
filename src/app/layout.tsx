@@ -11,9 +11,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nexyrium | Premium Advisory & Automation Consultancy",
-  description: "Nexyrium delivers bespoke strategic consulting, AI automation architectures, and database execution plans for elite enterprises worldwide.",
-  keywords: ["Consultancy", "Strategic Advisor", "AI Automation", "Luxury Brand", "Nexyrium"],
+  title: "Nexyrium | Premium Startup Fundraising Partner",
+  description: "Nexyrium is a premium fundraising advisory partner helping startup founders prepare investor-ready assets—from strategy, storytelling, and pitch decks to financial modeling and investor databases.",
+  keywords: [
+    "Fundraising Partner",
+    "Pitch Deck Design",
+    "Financial Models",
+    "Startup Fundraising",
+    "Investor Ready Assets",
+    "VC Databases",
+    "Nexyrium"
+  ],
   icons: {
     icon: "/nexyrium.jpeg",
     shortcut: "/nexyrium.jpeg",
