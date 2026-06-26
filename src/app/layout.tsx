@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   title: "Nexyrium | Premium Advisory & Automation Consultancy",
   description: "Nexyrium delivers bespoke strategic consulting, AI automation architectures, and database execution plans for elite enterprises worldwide.",
   keywords: ["Consultancy", "Strategic Advisor", "AI Automation", "Luxury Brand", "Nexyrium"],
+  icons: {
+    icon: "/nexyrium.jpeg",
+    shortcut: "/nexyrium.jpeg",
+    apple: "/nexyrium.jpeg",
+  },
 };
 
 export default function RootLayout({
