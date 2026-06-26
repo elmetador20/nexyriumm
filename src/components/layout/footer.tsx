@@ -27,9 +27,13 @@ export default function Footer() {
 
           {/* Left Brand Col */}
           <div className="md:col-span-5 space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-[10px] font-black text-black">
-                N
+            <div className="flex items-center gap-2 group">
+              <div className="relative w-8 h-8 rounded-full bg-gradient-to-b from-[#1c1c1e] to-[#050505] border border-amber-500/30 flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:border-amber-400/60 group-hover:shadow-[0_0_15px_rgba(212,175,55,0.25)]">
+                <img
+                  src="/nexyrium.jpeg"
+                  alt="Nexyrium Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="font-absans text-lg font-bold text-white tracking-wider">
                 NEXYRIUM
