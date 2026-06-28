@@ -29,12 +29,12 @@ export default function Hero() {
       {/* Editorial Grid and Background glows specifically for the Hero bounds */}
       <div className="absolute inset-0 bg-grid-pattern opacity-25 pointer-events-none z-0" />
       <div className="absolute inset-0 bg-noise opacity-20 pointer-events-none z-0" />
-      
+
       {/* Gradients / Radial Glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[85%] max-w-[1200px] h-[650px] bg-gradient-to-b from-amber-500/[0.04] via-transparent to-transparent blur-[120px] pointer-events-none z-0" />
       <div className="absolute top-[300px] left-[15%] w-[400px] h-[400px] bg-amber-600/[0.015] rounded-full blur-[110px] pointer-events-none z-0" />
       <div className="absolute top-[220px] right-[15%] w-[450px] h-[450px] bg-amber-500/[0.02] rounded-full blur-[120px] pointer-events-none z-0" />
-      
+
       {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         {mounted && Array.from({ length: 16 }).map((_, i) => (
@@ -105,7 +105,7 @@ export default function Hero() {
               <span>Book Free Strategy Call</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </motion.a>
-            
+
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -146,7 +146,7 @@ export default function Hero() {
             <div className="flex items-center gap-0.5 text-amber-400 mb-1">
               {Array.from({ length: 5 }).map((_, i) => (
                 <svg key={i} className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                 </svg>
               ))}
             </div>
@@ -166,12 +166,12 @@ export default function Hero() {
           <div className="text-[10px] uppercase tracking-[0.25em] text-zinc-600 mb-6 font-semibold">
             OUR CORE CAPABILITIES
           </div>
-          
+
           <div className="flex flex-wrap justify-center gap-3.5 max-w-4xl mx-auto">
             {[
               { label: "Pitch Deck", icon: Layers },
               { label: "Financial Model", icon: TrendingUp },
-              { label: "Investor Database", icon: Database },
+              { label: "Investor Outreach", icon: Database },
               { label: "Market Research", icon: Cpu },
               { label: "Startup Website", icon: Sparkles },
               { label: "Fundraising Strategy", icon: Workflow }
