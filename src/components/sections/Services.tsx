@@ -33,8 +33,8 @@ const servicesData = [
     category: "Financial Models"
   },
   {
-    title: "Investor Database",
-    desc: "Access a curated database of VCs, angels, family offices, and accelerators aligned with your startup stage.",
+    title: "Digital Marketing",
+    desc: "Accelerate your startup's growth with performance marketing, SEO, social media management, content creation, and targeted advertising campaigns.",
     icon: Database,
     image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&h=800&q=80",
     category: "Investor Database"
@@ -54,8 +54,8 @@ const servicesData = [
     category: "Research"
   },
   {
-    title: "Startup Website",
-    desc: "Launch a premium website that showcases your startup story, captures investor attention, and converts leads.",
+    title: "Startup Website & App",
+    desc: "Launch a premium website and app that showcases your startup story, captures investor attention, and converts leads.",
     icon: Sparkles,
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&h=800&q=80",
     category: "Websites"
