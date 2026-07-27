@@ -1,13 +1,31 @@
-"use client";
-
-import React from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { ArrowLeft, Cookie, Sparkles, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Cookie } from "lucide-react";
+import JsonLd from "@/components/seo/JsonLd";
+import { generateBreadcrumbSchema } from "@/lib/structured-data";
+
+export const metadata: Metadata = {
+  title: "Cookie Policy | Nexyrium",
+  description:
+    "Nexyrium's cookie policy. We use only essential cookies for platform performance and privacy-first browsing.",
+  alternates: {
+    canonical: "https://www.nexyrium.in/cookies",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function CookiesPolicy() {
   return (
     <div className="min-h-screen bg-[#070707] text-zinc-300 selection:bg-amber-500/30 selection:text-white relative overflow-hidden font-sans pb-20">
+      <JsonLd
+        data={generateBreadcrumbSchema([
+          { name: "Home", url: "https://www.nexyrium.in" },
+          { name: "Cookie Policy", url: "https://www.nexyrium.in/cookies" },
+        ])}
+      />
       {/* Background patterns */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none z-0" />
       <div className="absolute inset-0 bg-noise opacity-15 pointer-events-none z-0" />
@@ -27,12 +45,7 @@ export default function CookiesPolicy() {
 
       {/* Main Content Container */}
       <main className="w-full max-w-3xl mx-auto px-6 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="space-y-12"
-        >
+        <div className="space-y-12">
           {/* Header Title */}
           <div className="space-y-4 border-b border-zinc-900 pb-8">
             <div className="inline-flex items-center gap-1.5 text-[10px] font-bold tracking-widest text-amber-500 uppercase">
@@ -84,7 +97,7 @@ export default function CookiesPolicy() {
                 <span className="text-amber-500 text-sm">04/</span> MANAGING PREFERENCES
               </h2>
               <p className="text-xs md:text-sm text-zinc-400 font-light leading-relaxed">
-                You can block, disable, or delete cookies via your browser's security settings. However, doing so might restrict access to certain interactive elements or form actions on our advisory page.
+                You can block, disable, or delete cookies via your browser&apos;s security settings. However, doing so might restrict access to certain interactive elements or form actions on our advisory page.
               </p>
             </section>
           </div>
@@ -95,7 +108,7 @@ export default function CookiesPolicy() {
               © {new Date().getFullYear()} NEXYRIUM. All rights reserved. Zurich • New York • Singapore.
             </p>
           </div>
-        </motion.div>
+        </div>
       </main>
     </div>
   );
