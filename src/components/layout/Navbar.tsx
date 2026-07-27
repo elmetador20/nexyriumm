@@ -123,12 +123,12 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
 
   const navLinks = [
-    { label: "Services", href: "#services" },
+    { label: "Services", href: "/services" },
     { label: "Process", href: "#process" },
     { label: "Why Us", href: "#why-us" },
-    { label: "Testimonials", href: "#testimonials" },
+    { label: "Blog", href: "/blog" },
     { label: "FAQ", href: "#faq" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "/contact" },
   ];
 
   // Track scroll position for header styling
@@ -147,7 +147,7 @@ export default function Navbar() {
 
   // ScrollSpy to highlight the active section
   useEffect(() => {
-    const sections = ["services", "process", "why-us", "testimonials", "faq", "contact"];
+    const sections = ["process", "why-us", "faq"];
     
     const observerOptions = {
       root: null,
@@ -178,8 +178,9 @@ export default function Navbar() {
     };
   }, []);
 
-  // Smooth scroll handler
+  // Smooth scroll handler (only for hash links)
   const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!href.startsWith("#")) return;
     e.preventDefault();
     setMobileMenuOpen(false);
     const targetId = href.replace("#", "");

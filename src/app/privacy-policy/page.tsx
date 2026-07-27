@@ -1,13 +1,31 @@
-"use client";
-
-import React from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { ArrowLeft, Shield, Lock, Eye } from "lucide-react";
+import { ArrowLeft, Shield } from "lucide-react";
+import JsonLd from "@/components/seo/JsonLd";
+import { generateBreadcrumbSchema } from "@/lib/structured-data";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Nexyrium",
+  description:
+    "Nexyrium's privacy policy. Learn how we collect, handle, and secure your information when using our fundraising advisory services.",
+  alternates: {
+    canonical: "https://www.nexyrium.in/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-[#070707] text-zinc-300 selection:bg-amber-500/30 selection:text-white relative overflow-hidden font-sans pb-20">
+      <JsonLd
+        data={generateBreadcrumbSchema([
+          { name: "Home", url: "https://www.nexyrium.in" },
+          { name: "Privacy Policy", url: "https://www.nexyrium.in/privacy-policy" },
+        ])}
+      />
       {/* Background patterns */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none z-0" />
       <div className="absolute inset-0 bg-noise opacity-15 pointer-events-none z-0" />
@@ -27,12 +45,7 @@ export default function PrivacyPolicy() {
 
       {/* Main Content Container */}
       <main className="w-full max-w-3xl mx-auto px-6 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="space-y-12"
-        >
+        <div className="space-y-12">
           {/* Header Title */}
           <div className="space-y-4 border-b border-zinc-900 pb-8">
             <div className="inline-flex items-center gap-1.5 text-[10px] font-bold tracking-widest text-amber-500 uppercase">
@@ -108,7 +121,7 @@ export default function PrivacyPolicy() {
               © {new Date().getFullYear()} NEXYRIUM. All rights reserved. Zurich • New York • Singapore.
             </p>
           </div>
-        </motion.div>
+        </div>
       </main>
     </div>
   );

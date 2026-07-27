@@ -51,21 +51,21 @@ export default function Footer() {
             </h4>
             <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs md:text-sm font-light">
               {[
-                { name: "Services", href: "#services" },
+                { name: "Services", href: "/services" },
+                { name: "Blog", href: "/blog" },
+                { name: "Contact", href: "/contact" },
                 { name: "Process", href: "#process" },
                 { name: "Why Nexyrium", href: "#why-us" },
-                { name: "Testimonials", href: "#testimonials" },
-                { name: "FAQ", href: "#faq" },
-                { name: "Contact", href: "#contact" }
+                { name: "FAQ", href: "#faq" }
               ].map((link) => (
-                <a
+                <Link
                   key={link.name}
                   href={link.href}
                   className="relative group text-zinc-400 hover:text-white transition-colors duration-300 w-fit py-1"
                 >
                   <span>{link.name}</span>
                   <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-amber-500 transition-all duration-300 group-hover:w-full" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
