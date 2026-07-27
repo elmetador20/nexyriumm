@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import Hero from "@/components/hero/Hero";
 import Marquee from "@/components/marquee";
 import Services from "@/components/sections/Services";
@@ -11,42 +10,55 @@ import Testimonials from "@/components/testimonials/Testimonials";
 import FAQ from "@/components/faq/FAQ";
 import CTA from "@/components/cta/CTA";
 import Footer from "@/components/layout/footer";
+import JsonLd from "@/components/seo/JsonLd";
+import { generateFAQSchema } from "@/lib/structured-data";
 import {
-  Cpu,
-  Database,
-  Layers,
-  Shield,
-  Workflow,
-  TrendingUp,
-  CheckCircle2,
   Mail,
-  Phone,
   MapPin,
-  ArrowUpRight,
-  MessageSquare,
-  Sparkles,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 
-// Fade-in animation helper variants
-const fadeIn = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] }
-};
-
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
+const homepageFaqs = [
+  {
+    question: "Do you guarantee funding?",
+    answer:
+      "No. No company can ethically guarantee investment. Our role as a Startup Fundraising Partner is to maximize your fundraising readiness by preparing investor-grade materials, refining your strategy, and positioning your startup professionally. Final investment decisions are made independently by investors.",
+  },
+  {
+    question: "How long does the process take?",
+    answer:
+      "Most founders receive all core deliverables within 2-4 weeks, depending on project complexity and review cycles.",
+  },
+  {
+    question: "Can you work with idea-stage startups?",
+    answer:
+      "Absolutely. Whether you're validating an initial concept or preparing for institutional funding, our Investor Readiness Platform tailors our process to match your current startup stage.",
+  },
+  {
+    question: "Do you sign NDAs?",
+    answer:
+      "Yes. Confidentiality is fundamental to our work. We are happy to sign a Non-Disclosure Agreement before discussing sensitive information.",
+  },
+  {
+    question: "What industries do you work with?",
+    answer:
+      "We partner with startups across AI, SaaS, FinTech, HealthTech, ClimateTech, DeepTech, Manufacturing, EdTech, Consumer Brands, and many more.",
+  },
+  {
+    question: "What deliverables do I receive?",
+    answer:
+      "Depending on your engagement package, you may receive an Investor-ready Pitch Deck, Financial Model, Startup Website, Investor Database, Market Research, Data Room, GTM Strategy, and Investor Outreach Assets.",
+  },
+  {
+    question: "Can you help after delivery?",
+    answer:
+      "Yes. We continue supporting founders with revisions, fundraising guidance, investor preparation, and future updates whenever required.",
+  },
+];
 
 export default function Home() {
   const [formData, setFormData] = useState({ name: "", email: "", project: "", message: "" });
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "success">("idle");
-  const [dbTab, setDbTab] = useState<"performance" | "security" | "architecture">("performance");
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -60,10 +72,12 @@ export default function Home() {
 
   return (
     <div className="relative w-full min-h-screen bg-[#050508] bg-noise flex flex-col items-center overflow-x-clip selection:bg-amber-500/20 selection:text-amber-200">
+      <JsonLd data={generateFAQSchema(homepageFaqs)} />
+
       <Hero />
       <Marquee />
 
-      {/* 2. SERVICES SECTION */}
+      {/* SERVICES SECTION */}
       <Services />
 
       {/* PROCESS SECTION */}
@@ -75,17 +89,17 @@ export default function Home() {
       {/* TESTIMONIALS SECTION */}
       <Testimonials />
 
-      {/* 3. FAQ SECTION */}
+      {/* FAQ SECTION */}
       <section id="faq" className="w-full max-w-6xl px-6 pt-16 md:pt-20 pb-20 md:pb-32 relative z-10 border-t border-zinc-900/60">
         <FAQ />
       </section>
 
-      {/* 4. FINAL CALL TO ACTION */}
+      {/* FINAL CALL TO ACTION */}
       <section className="w-full relative z-10 border-t border-zinc-900/60 bg-[#050508]/40">
         <CTA />
       </section>
 
-      {/* 5. CONTACT SECTION */}
+      {/* CONTACT SECTION */}
       <section id="contact" className="w-full max-w-4xl px-6 py-20 md:py-32 relative z-10">
         <div className="rounded-[32px] border border-amber-500/25 bg-zinc-950/70 p-6 md:p-12 shadow-[0_30px_70px_rgba(0,0,0,0.9)] backdrop-blur-md relative overflow-hidden">
           {/* Subtle gold border top highlight */}
@@ -100,7 +114,7 @@ export default function Home() {
                   / BOOK A SESSION
                 </div>
                 <h2 className="text-3xl font-bold tracking-tight text-white leading-tight uppercase font-absans">
-                  Let's Build <br />
+                  Let&apos;s Build <br />
                   <span className="gold-text-gradient font-absans">Your Future</span>
                 </h2>
                 <p className="text-xs text-zinc-400 font-light leading-relaxed">
