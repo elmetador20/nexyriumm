@@ -85,7 +85,7 @@ export default function Footer() {
                   title="Click to copy email address"
                 >
                   <Mail className="w-4 h-4 text-amber-500 shrink-0" />
-                  <span className="font-mono">nexyriumtechnologies@gmail.com</span>
+                  <span className="font-mono">info@nexyrium.in</span>
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ml-1">
                     {copied ? (
                       <Check className="w-3.5 h-3.5 text-emerald-400" />
@@ -112,7 +112,7 @@ export default function Footer() {
 
               {/* Book Call Link */}
               <a
-                href="https://wa.me/918979952549"
+                href="https://cal.com/nexyrium-pfgh3w/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors duration-300 w-fit"

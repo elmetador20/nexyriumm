@@ -8,86 +8,59 @@ import { TestimonialData } from "./TestimonialCard";
 
 const testimonialsData: TestimonialData[] = [
   {
-    quote: "Nexyrium completely transformed our fundraising story. Our deck finally communicated the vision clearly, and investor meetings became much more productive.",
-    name: "Arjun Mehta",
+    quote:
+      "Nexyrium helped us put our business idea into a much clearer investor story. The pitch deck made it easier for us to explain OwnMyPin, our business model, and where we are heading.",
+    name: "Sagor Das",
     role: "Founder",
-    company: "HealthTech Startup",
-    industry: "HealthTech",
-    stage: "Pre-Seed",
-    services: ["Pitch Deck", "Storytelling Strategy"]
+    company: "OwnMyPin",
+    industry: "Technology",
+    stage: "Early Stage",
+    services: ["Pitch Deck", "Investment Support"],
   },
+
   {
-    quote: "The financial model alone saved us weeks of work. Investors appreciated the clarity, assumptions, and realistic projections.",
-    name: "Priya Kapoor",
+    quote:
+      "Working with Nexyrium helped us present Savitram Foundation in a more structured and professional way. They understood what we were trying to communicate and helped us build the right presentation around it.",
+    name: "Govind Goyal",
     role: "Founder",
-    company: "AI Startup",
-    industry: "Artificial Intelligence",
-    stage: "Seed Stage",
-    services: ["Financial Model", "Financial Planning"]
+    company: "Savitram Foundations",
+    industry: "Social Impact",
+    stage: "Growth Stage",
+    services: ["Pitch Deck", "Investment Support"],
   },
+
   {
-    quote: "Our pitch deck looked like something a Series A startup would present. The quality exceeded our expectations.",
-    name: "Rohan Sharma",
-    role: "Co-Founder",
-    company: "SaaS Startup",
-    industry: "B2B SaaS",
-    stage: "Seed Stage",
-    services: ["Pitch Deck Design", "Brand Strategy"]
-  },
-  {
-    quote: "The investor database helped us connect with relevant VCs instead of wasting time on cold outreach.",
-    name: "Neha Verma",
+    quote:
+      "The team at Nexyrium helped us organise our story and turn our ideas into a presentation that was much easier to communicate. The process was straightforward and the final deck looked professional.",
+    name: "Shubham Thomson",
     role: "Founder",
-    company: "FinTech Startup",
-    industry: "FinTech",
-    stage: "Pre-Seed",
-    services: ["Investor Database", "Fundraising Strategy"]
+    company: "Alpha Omega School Services",
+    industry: "Education",
+    stage: "Growth Stage",
+    services: ["Pitch Deck", "Investment Support"],
   },
+
   {
-    quote: "Everything—from the website to the data room—looked incredibly polished. It gave us confidence before our first investor meeting.",
-    name: "Aditya Singh",
+    quote:
+      "Nexyrium understood our business and helped us create a pitch deck that presented Shantilal's International Food in a much more structured way. Their support during the investment preparation was particularly useful.",
+    name: "Arjun Kumar",
     role: "Founder",
-    company: "DeepTech Startup",
-    industry: "DeepTech",
-    stage: "Angel Round",
-    services: ["Startup Website", "Data Room Prep", "Pitch Deck"]
+    company: "Shantilal's International Food Private Limited",
+    industry: "Food & Beverage",
+    stage: "Growth Stage",
+    services: ["Pitch Deck", "Investment Support"],
   },
+
   {
-    quote: "We came to Nexyrium with scattered ideas and left with a complete fundraising strategy that made perfect sense.",
-    name: "Rahul Jain",
+    quote:
+      "For a manufacturing business, explaining the opportunity clearly to investors can be challenging. Nexyrium helped us structure our pitch and present our UPVC manufacturing business in a clear and professional way.",
+    name: "Kiran",
     role: "Founder",
-    company: "ClimateTech Startup",
-    industry: "ClimateTech",
-    stage: "Seed Stage",
-    services: ["Fundraising Strategy", "Pitch Deck Review"]
+    company: "Kiran Interiors",
+    industry: "UPVC Manufacturing",
+    stage: "Growth Stage",
+    services: ["Pitch Deck", "Investment Support"],
   },
-  {
-    quote: "The storytelling was exceptional. Investors immediately understood our problem, solution, and business model.",
-    name: "Ananya Patel",
-    role: "Founder",
-    company: "EdTech Startup",
-    industry: "EdTech",
-    stage: "Pre-Seed",
-    services: ["Pitch Deck", "Storytelling Review"]
-  },
-  {
-    quote: "Our fundraising materials looked like they belonged to a much larger company. The attention to detail was outstanding.",
-    name: "Karan Malhotra",
-    role: "Founder",
-    company: "Cybersecurity Startup",
-    industry: "Cybersecurity",
-    stage: "Seed Stage",
-    services: ["Pitch Deck", "Financial Model", "Website Design"]
-  },
-  {
-    quote: "Nexyrium became more than a service provider—they became our fundraising partner throughout the entire process.",
-    name: "Aman Khurana",
-    role: "Founder",
-    company: "B2B SaaS Startup",
-    industry: "B2B SaaS",
-    stage: "Series A Prep",
-    services: ["Pitch Deck", "Financial Model", "VC Introductions", "Strategy"]
-  }
 ];
 
 export default function Testimonials() {
