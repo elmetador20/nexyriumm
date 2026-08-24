@@ -126,7 +126,7 @@ export default function Home() {
               <div className="space-y-4 text-xs text-zinc-400 font-mono">
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-amber-500 animate-pulse" />
-                  <span>hello@nexyrium.com</span>
+                  <span>info@nexyrium.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-4 h-4 text-amber-500" />

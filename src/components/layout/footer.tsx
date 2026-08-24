@@ -9,7 +9,7 @@ export default function Footer() {
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText("hello@nexyrium.com");
+    navigator.clipboard.writeText("info@nexyrium.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };

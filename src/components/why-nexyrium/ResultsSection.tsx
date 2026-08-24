@@ -6,7 +6,7 @@ import MetricCard from "./MetricCard";
 
 const metricsData = [
   {
-    numberStr: "100+",
+    numberStr: "50+",
     label: "Founders Supported",
     desc: "Helping startups prepare for investor conversations across multiple industries."
   },
@@ -21,7 +21,7 @@ const metricsData = [
     desc: "Experience working with SaaS, AI, Healthcare, FinTech, DeepTech, Manufacturing, and more."
   },
   {
-    numberStr: "₹500 Cr+", // Prepared fundraising asset volume
+    numberStr: "₹250 Cr+", // Prepared fundraising asset volume
     label: "Funding Prepared",
     desc: "Investor-ready fundraising assets supporting startups seeking capital."
   }

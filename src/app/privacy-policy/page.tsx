@@ -107,8 +107,8 @@ export default function PrivacyPolicy() {
               </h2>
               <p className="text-xs md:text-sm text-zinc-400 font-light leading-relaxed">
                 If you have questions regarding this policy or wish to request data purging, please contact us directly at{" "}
-                <a href="mailto:hello@nexyrium.com" className="text-amber-400 hover:underline">
-                  hello@nexyrium.com
+                <a href="mailto:info@nexyrium.com" className="text-amber-400 hover:underline">
+                  info@nexyrium.com
                 </a>
                 .
               </p>
