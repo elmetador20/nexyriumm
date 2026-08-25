@@ -99,10 +99,10 @@ export default function ContactPage() {
                       Email
                     </p>
                     <a
-                      href="mailto:info@nexyrium.com"
+                      href="mailto:info@nexyrium.in"
                       className="text-sm text-zinc-300 hover:text-amber-300 transition-colors font-light"
                     >
-                      info@nexyrium.com
+                      info@nexyrium.in
                     </a>
                   </div>
                 </div>

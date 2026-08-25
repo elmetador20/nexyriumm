@@ -11,7 +11,7 @@ export const siteConfig = {
   description: DEFAULT_DESCRIPTION,
   ogImage: `${SITE_URL}/nexyrium.jpeg`,
   twitterHandle: "@nexyrium",
-  email: "info@nexyrium.com",
+  email: "info@nexyrium.in",
   phone: "+918979952549",
   keywords: [
     "Pitch Deck Services",
