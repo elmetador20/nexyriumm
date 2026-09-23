@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Phone, MapPin, ArrowRight, Calendar } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight, Calendar, Store, User } from "lucide-react";
 import JsonLd from "@/components/seo/JsonLd";
 import {
   generateBreadcrumbSchema,
@@ -137,6 +137,60 @@ export default function ContactPage() {
                     <p className="text-sm text-zinc-300 font-light">
                       India (Remote-first)
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Business Information */}
+            <div className="space-y-6">
+              <h2 className="font-absans text-xl font-bold uppercase text-white tracking-wide">
+                Business Information
+              </h2>
+
+              <div className="space-y-5">
+                <div className="flex items-center gap-4 p-4 rounded-2xl border border-zinc-900/60 bg-zinc-950/30">
+                  <div className="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/20 flex items-center justify-center shrink-0">
+                    <Store className="w-4 h-4 text-amber-500" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-bold tracking-widest text-zinc-500 uppercase mb-1">
+                      Trade Name
+                    </p>
+                    <p className="text-sm text-zinc-300 font-light">
+                      Nexyrium
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 p-4 rounded-2xl border border-zinc-900/60 bg-zinc-950/30">
+                  <div className="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/20 flex items-center justify-center shrink-0">
+                    <User className="w-4 h-4 text-amber-500" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-bold tracking-widest text-zinc-500 uppercase mb-1">
+                      Legal / Proprietor Name
+                    </p>
+                    <p className="text-sm text-zinc-300 font-light">
+                      Arshan Alam
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 p-4 rounded-2xl border border-zinc-900/60 bg-zinc-950/30">
+                  <div className="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/20 flex items-center justify-center shrink-0">
+                    <Mail className="w-4 h-4 text-amber-500" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-bold tracking-widest text-zinc-500 uppercase mb-1">
+                      Customer Support Email
+                    </p>
+                    <a
+                      href="mailto:info@nexyrium.in"
+                      className="text-sm text-zinc-300 hover:text-amber-300 transition-colors font-light"
+                    >
+                      info@nexyrium.in
+                    </a>
                   </div>
                 </div>
               </div>

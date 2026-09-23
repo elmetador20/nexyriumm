@@ -157,6 +157,7 @@ export default function Footer() {
         <div className="w-full flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] md:text-xs text-zinc-500">
           <div className="space-y-0.5 text-center md:text-left">
             <p>© {new Date().getFullYear()} Nexyrium. All Rights Reserved.</p>
+            <p className="text-zinc-600 font-light">Nexyrium is a proprietorship owned by Arshan Alam.</p>
             <p className="text-zinc-600 font-light">Built for ambitious founders raising the future.</p>
           </div>
 
