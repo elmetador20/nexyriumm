@@ -189,7 +189,7 @@ export default function ContactPage() {
                       href="mailto:info@nexyrium.in"
                       className="text-sm text-zinc-300 hover:text-amber-300 transition-colors font-light"
                     >
-                      info@nexyrium.in
+                      arshan131004@gmail.com
                     </a>
                   </div>
                 </div>
